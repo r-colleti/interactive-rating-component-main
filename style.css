@@ -1,0 +1,282 @@
+body{
+	margin: 0;
+	padding: 0 25px;
+	background-color: hsl(228, 11%, 9%);
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+ /* Controle de Display */
+
+.displayCongrat {
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 320px;
+}
+
+.displayForm {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+}
+
+/* Card Background */
+
+.cardRate {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 30px;
+	max-width: 410px;
+	width: 100%;
+	height: 415px;
+	background-color: hsl(215, 22%, 15%);
+	border-radius: 30px;
+}
+
+/* Pós form Style */
+
+.yourRate {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 32px;
+	width: 192px;
+	border-radius: 20px;
+	background-color: hsl(210, 19%, 18%);
+}
+
+.yourRate p {
+	margin: 0;
+	padding: 0;
+	font-family: 'Overpass', sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	color: hsl(25, 97%, 53%);
+}
+
+.copyPos {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: 105px;
+	width: 100%;
+}
+
+.copyPos h1 {
+	margin: 0;
+	padding: 0;
+	font-family: 'Overpass', sans-serif;
+	font-size: 25px;
+	font-weight: 400;
+	color: white;
+}
+
+.copyPos p {
+	margin: 0;
+	padding: 0;
+	font-family: 'Overpass', sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	color: hsl(216, 12%, 54%);
+	text-align: center;
+}
+
+/* Form Style */
+
+.stIcon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 48px;
+	height: 48px;
+	background-color: hsl(210, 19%, 18%);
+	border-radius: 50px;
+}
+
+.copy {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 105px;
+	width: 100%;
+}
+
+.copy h1 {
+	margin: 0;
+	padding: 0;
+	font-family: 'Overpass', sans-serif;
+	font-size: 28px;
+	font-weight: 700;
+	color: hsl(0, 0%, 100%);
+}
+
+.copy p {
+	margin: 0;
+	padding: 0;
+	font-family: 'Overpass', sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	color: hsl(217, 12%, 63%);
+}
+
+.fmArea {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	height: 128px;
+}
+
+.btnRates {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Edita propriedades da div com class radio */
+
+.radio {
+ 	box-sizing: border-box;
+ 	position: relative;
+ 	height: 50px;
+  	width: 50px;
+}
+
+/* Edita propriedades da label */
+
+.radio label {
+	border-radius: 50px;
+  	background: hsl(210, 19%, 18%);
+  	cursor: pointer;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	position: absolute;
+  	width: 100%;
+  	height: 100%;
+  	white-space: nowrap;
+}
+
+/* Edita propriedades do span, que contém a escrita */
+
+.radio label span {
+  	z-index: 1;
+  	font-family: 'Overpass', sans-serif;
+	font-size: 15px;
+	font-weight: 700;
+	color: hsl(0, 0%, 100%);
+}
+
+/* Edita propriedades do input */
+
+.radio label input[type=radio] {
+	border-radius: 50px;
+  	all: unset;
+  	position: absolute;
+  	width: 100%;
+  	height: 100%;
+}
+
+/* Altera cor de fundo do input quando selecionado */
+
+.radio label input[type=radio]:checked {
+	border-radius: 50px;
+  	background-color: hsl(25, 97%, 53%);
+}
+
+/* Altera cor de fundo do input quando o mouse passa por cima */
+
+.radio label input[type=radio]:hover {
+	border-radius: 50px;
+  	background-color: hsl(217, 12%, 63%);
+}
+
+/* Altera cor da escrita de dentro do input */
+
+.radio label input[type=radio]:checked + span{
+  	color: white;
+}
+
+.btnSub {
+	width: 100%;
+	height: 45px;
+	background-color: hsl(25, 97%, 53%);
+	border: none;
+	border-radius: 25px;
+	font-family: 'Overpass', sans-serif;
+	font-size: 15px;
+	font-weight: 700;
+	color: hsl(0, 0%, 100%);
+}
+
+.btnSub:hover {
+	background-color: hsl(0, 0%, 100%);
+	color: hsl(25, 97%, 53%);
+}
+
+
+/* Responsive Content */
+
+@media (max-width: 424px) {
+
+
+/* Controle de Display */
+
+.displayCongrat {
+	height: 285px;
+}
+
+/* Card Background */
+
+.cardRate {
+	padding: 21px 21px 31px 21px;
+	height: 360px;
+	border-radius: 20px;
+}
+
+/* Pós form Style */
+
+.yourRate {
+	height: 32px;
+	width: 165px;
+}
+
+.copyPos {
+	height: 100px;
+}
+
+/* Form Style */
+
+.stIcon {
+	width: 38px;
+	height: 38px;
+}
+
+.copy {
+	height: 100px;
+}
+
+.fmArea {
+	height: 110px;
+}
+
+/* Edita propriedades da div com class radio */
+
+.radio {
+ 	height: 40px;
+  	width: 40px;
+}
+
+}
